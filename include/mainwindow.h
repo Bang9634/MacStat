@@ -11,15 +11,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    virtual ~MainWindow() override;
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private slots:
     void updateStats();
 
 private:
-    QTimer *updateTimer;
     QLabel *memoryLabel;
+    QTimer *updateTimer;
     MemoryStats memoryStats;
 };
 

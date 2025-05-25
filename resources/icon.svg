@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <!-- 배경 그라데이션 -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#34C759"/>
+            <stop offset="100%" style="stop-color:#30B54A"/>
+        </linearGradient>
+        <!-- 반사 효과 -->
+        <linearGradient id="reflection" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0"/>
+        </linearGradient>
+    </defs>
+
+    <!-- 둥근 사각형 배경 -->
+    <rect x="112" y="112" width="800" height="800" rx="180" ry="180" fill="url(#bgGradient)"/>
+    
+    <!-- 반사 효과 -->
+    <rect x="112" y="112" width="800" height="400" rx="180" ry="180" fill="url(#reflection)"/>
+
+    <!-- 메모리 바 그래프 -->
+    <g transform="translate(262, 262)">
+        <!-- 바 배경 -->
+        <rect x="0" y="0" width="500" height="80" rx="40" ry="40" fill="#FFFFFF" opacity="0.2"/>
+        <rect x="0" y="160" width="500" height="80" rx="40" ry="40" fill="#FFFFFF" opacity="0.2"/>
+        <rect x="0" y="320" width="500" height="80" rx="40" ry="40" fill="#FFFFFF" opacity="0.2"/>
+
+        <!-- 활성 바 -->
+        <rect x="0" y="0" width="400" height="80" rx="40" ry="40" fill="#FFFFFF"/>
+        <rect x="0" y="160" width="300" height="80" rx="40" ry="40" fill="#FFFFFF"/>
+        <rect x="0" y="320" width="450" height="80" rx="40" ry="40" fill="#FFFFFF"/>
+    </g>
+</svg> 
